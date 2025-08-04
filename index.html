@@ -1,0 +1,252 @@
+<!DOCTYPE html> 
+<html lang="en">
+
+  <head> 
+
+    <meta charset="UTF-8">
+    <meta name= "description" content="Edwin's Web Dev Journey">
+    <meta name="author" content="Edwin">
+    <meta name="keywords" content="HTML, tutorials, web development, Edwin">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Edwin's Website </title>
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+
+  <body> 
+
+    <!--Website Header-->
+    <header>
+      <h1> <strong> Edwin's Web Dev Journey</strong> </h1>
+    </header>
+    
+
+    <nav aria-label="Main Navigation">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Projects</a></li>
+      </ul>
+    </nav>
+
+    <!--Main Content-->
+    <main id="main-content">
+
+    <!-- About Me Section -->
+      <section id="about" aria-labelledby="About me">
+      <h2 id="About me">About Me</h2>
+      <p>Hi, I'm Edwin—a curious web development enthusiast exploring HTML5 and front-end magic through PLP Academy.
+          I love turning ideas into clean, user-friendly websites.</p>
+      </section>
+      <figure>
+      <img src="my_photo.jpg" alt="A photo of Edwin" style="width: 200px;">
+      </figure>
+      </section>
+
+    <!-- Services Section -->
+      <section id="services section" aria-labelledby="Services">
+        <h2 id="Services">Services</h2>
+        <ul>
+          <li>Web Design</li>
+          <li>HTML5 basics</li>
+          <li>Accessibility tips</li>
+        </ul>
+      </section>
+
+    <!-- Projects Section -->
+      <section id="projects section" aria-labelledby="Projects">
+        <h2 id="Projects">Projects</h2>
+        <table>
+          <thead>
+            <tr>
+              <th scope="col"> <strong>Project Name</strong> </th>
+              <th scope="col"> <strong>Description</strong> </th>
+              <th scope="col"> <strong>Year</strong> </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td> My First Site </td>
+              <td> Basic HTML structure </td>
+              <td> 2025 </td>
+            </tr>              
+            <tr>
+              <td> Form Builder </td>
+              <td> HTML5 form elements </td>
+              <td> 2025 </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+    <!--Featured Video Section-->
+      <section id="featured video section" aria-labelledby="Featured Video">
+        <h2 id="Featured Video">Featured Video</h2>
+        <figure>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/pQN-pnXPaVg?si=Qpblfpr5jigJ1hQ9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </figure>
+      </section>
+
+    <!--Contact Section-->
+      <section id="contact section" aria-labelledby="Contact Me">
+        <h2 id="Contact Me"> Contact Me </h2>
+        <form action="#" method="get">
+          <label for="name"> Name </label>
+          <input type="text" name="name" id="name" placeholder="Username" required>
+          <br>
+          <br>
+          <label for="email"> Email </label>
+          <input type="email" name="email" id="email" placeholder="username@gmail.com" required>
+          <br>
+          <br>
+          <label for="message"> Message </label>
+          <textarea id="message" name="message"></textarea>
+          <br>
+          <br>
+          <button type="submit" > Send Message </button>
+        </form>
+      </section>
+
+      <!--Newsletter Signup-->
+      <section id="newsletter section" ara-labelledby="Newsletter Signup">
+        <h2 id="Newsletter Signup"> Newsletter Signup </h2>
+        <form action="#" method="get">
+          <label for="subscribe" > Subscribe to my newsletter: </label>
+          <br>
+          <br>
+          <input id="subscribe" type="email" name="subscribe" placeholder="username@gmail.com" >
+
+          <button type="submit" > Subscribe </button>
+        </form>
+      </section>
+
+      <br>
+      <!--GitHub Button-->
+      <section id="github button" aria-label="Visit My GitHub">
+        <a href="https://github.com/Edwin-Art5" target="_blank"> <button>Visit My GitHub</button> </a>
+      </section>
+    </main>
+
+    <!--Footer-->
+    <footer>
+      <p>&copy; Edwin. All rights reserved. </p>
+    </footer>
+   
+  </body>
+
+/* General Reset */
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and Typography */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* Navigation */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 1rem 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  transition: background 0.3s;
+}
+
+nav a:hover {
+  background-color: #ddd;
+  border-radius: 5px;
+}
+
+/* Sections */
+section {
+  margin-bottom: 40px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+/* Image */
+img {
+  display: block;
+  margin: 1rem auto;
+  border-radius: 10px;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+/* Forms */
+form label {
+  font-weight: bold;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #777;
+}
+</style>
+
+</html>
